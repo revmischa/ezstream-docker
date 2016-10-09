@@ -1,6 +1,6 @@
 FROM revmischa/mp3:latest
 
-RUN ["yum", "-y", "install", "gcc", "make", "libshout-devel", "libxml2-devel", "taglib-devel", "libvorbis-devel", "wget", "libid3tag-devel"]
+RUN ["yum", "-y", "install", "gcc", "make", "libshout-devel", "libxml2-devel", "taglib-devel", "libvorbis-devel", "wget", "libid3tag-devel", "flac"]
 
 RUN ["useradd", "-m", "streamer"]
 WORKDIR /home/streamer
